@@ -1,8 +1,8 @@
-# gcp-dbt-etl
+# gcp-dbt-elt
 
 ## Overview
 
-`gcp-dbt-etl` is a project designed to streamline and automate the ETL (Extract, Transform, Load) process using Google Cloud Platform (GCP) services and DBT (Data Build Tool). The project leverages Google Cloud Run to deploy a scalable and serverless environment for executing ETL jobs, while DBT is used to handle data transformation tasks in Bigquery.
+`gcp-dbt-elt` is a project designed to streamline and automate the ELT (Extract, Load, Transform) process using Google Cloud Platform (GCP) services and DBT (Data Build Tool). The project leverages Google Cloud Run to deploy a scalable and serverless environment for executing ELT jobs, while DBT is used to handle data transformation tasks in Bigquery.
 
 
 ## Features
@@ -24,8 +24,8 @@
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/alfonsozamorac/gcp-dbt-etl.git
-   cd gcp-dbt-etl
+   git clone https://github.com/alfonsozamorac/gcp-dbt-elt.git
+   cd gcp-dbt-elt
    ```
 
 2. Export your GCP credentials:
