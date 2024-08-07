@@ -1,0 +1,42 @@
+version: 2
+
+models:
+  - name: sales_summary
+    description: "Aggregated sales data by date."
+    columns:
+      - name: date
+        description: "Date of the sales aggregation."
+      - name: total_sales
+        description: "Total sales amount for the day."
+      - name: number_of_sales
+        description: "Number of sales transactions for the day."
+
+  - name: product_sales_summary
+    description: "Aggregated sales data by product."
+    columns:
+      - name: product_name
+        description: "Name of the product."
+      - name: total_sales
+        description: "Total sales amount for the product."
+      - name: number_of_sales
+        description: "Number of sales transactions for the product."
+
+  - name: customer_sales_summary
+    description: "Aggregated sales data by customer."
+    columns:
+      - name: customer_name
+        description: "Name of the customer."
+      - name: total_spent
+        description: "Total amount spent by the customer."
+      - name: purchase_count
+        description: "Number of purchases made by the customer."
+
+  - name: daily_sales_summary
+    description: "Incremental daily sales summary, partitioned by date."
+    columns:
+      - name: date
+        description: "Date of the sales aggregation."
+      - name: total_sales
+        description: "Total sales amount for the day."
+      - name: number_of_sales
+        description: "Number of sales transactions for the day."
