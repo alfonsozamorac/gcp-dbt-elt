@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: raw_data
+    database: MY_GCP_PROJECT
+    schema: example_dataset_raw
+    tables:
+      - name: sales
+        description: "Raw sales data."
+      - name: products
+        description: "Raw product data."
+      - name: customers
+        description: "Raw customer data."

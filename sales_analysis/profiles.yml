@@ -1,0 +1,14 @@
+default:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      keyfile: /secrets/dbt-secret-auth
+      project: MY_GCP_PROJECT
+      dataset: default_dataset_dbt
+      threads: 1
+      timeout_seconds: 300
+      location: EU
+      priority: interactive
+      job_retries: 1

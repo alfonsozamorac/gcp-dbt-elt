@@ -1,0 +1,28 @@
+name: 'sales_analysis'
+version: '1.0.0'
+
+profile: 'default'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  sales_analysis:
+    +materialized: table
+    staging:
+      +schema: example_dataset_staging
+      +materialized: view
+    marts:
+      +schema: example_dataset_mart
+      +materialized: table
+    incremental:
+      +schema: example_dataset_mart
+      +materialized: incremental
